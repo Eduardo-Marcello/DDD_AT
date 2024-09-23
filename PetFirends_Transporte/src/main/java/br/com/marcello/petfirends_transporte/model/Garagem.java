@@ -19,7 +19,7 @@ public class Garagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String codigo;
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "estoque")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "garagens")
     private List<VeiculoEntrega> veiculos;
     @Embedded
     private Veiculo veiculo;
